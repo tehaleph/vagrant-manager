@@ -67,6 +67,7 @@
                                                 <menuItem title="Terminal" tag="100" id="kjx-me-UIj"/>
                                                 <menuItem title="iTerm/iTerm2" state="on" tag="101" id="nvj-E8-vFA"/>
                                                 <menuItem title="Hyper" tag="102" id="fdc-NL-UhO"/>
+                                                <menuItem title="Alacritty" tag="103" id="E6o-un-EEZ"/>
                                             </items>
                                         </menu>
                                     </popUpButtonCell>

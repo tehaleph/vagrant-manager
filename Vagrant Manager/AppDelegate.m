@@ -637,6 +637,16 @@
                     "key code 36\n"
                 "end tell\n"
              "end tell\n", command];
+    } else if ([terminalName isEqualToString:@"Alacritty"]) {
+            s = [NSString stringWithFormat:
+                 @"tell application \"Alacritty\"\n"
+                    "activate\n"
+                    "delay 0.5\n"
+                    "tell application \"System Events\"\n"
+                        "keystroke \"%@\"\n"
+                        "key code 36\n"
+                    "end tell\n"
+                 "end tell\n", command];
     } else {
         s = [NSString stringWithFormat:
              @"tell application \"Terminal\"\n"

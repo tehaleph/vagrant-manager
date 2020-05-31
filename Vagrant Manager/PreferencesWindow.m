@@ -50,6 +50,8 @@
         [self.terminalPreferencePopUpButton selectItemWithTag:101];
     } else if ([terminalPreference isEqualToString:@"Hyper"]) {
         [self.terminalPreferencePopUpButton selectItemWithTag:102];
+    } else if ([terminalPreference isEqualToString:@"Alacritty"]) {
+        [self.terminalPreferencePopUpButton selectItemWithTag:103];
     } else {
         [self.terminalPreferencePopUpButton selectItemWithTag:100];
     }
@@ -156,6 +158,8 @@
         terminalPreference = @"iTerm";
     } else if (self.terminalPreferencePopUpButton.selectedItem.tag == 102) {
         terminalPreference = @"Hyper";
+    } else if (self.terminalPreferencePopUpButton.selectedItem.tag == 103) {
+        terminalPreference = @"Alacritty";
     } else {
         terminalPreference = @"Terminal";
     }
